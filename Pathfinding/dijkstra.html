@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="dijkstra.js"></script>
+    <script src="../p5.js"></script>
+</head>
+
+<body>
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="">Small Projects</a>
+            <div class="dropdown-content">
+                <a href="../SmallProjects/TicTacToe.html">Tic Tac Toe</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a class="active" href="">Pathfinding</a>
+            <div class="dropdown-content">
+                <a href="aStar.html">Astart</a>
+                <a class="active" href="">Dijkstra</a>
+                <a href="depthFirst.html">Depth First</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="">Maze Generation</a>
+            <div class="dropdown-content">
+				<a href="../MazeGeneration/ellerAlgorithm.html">Eller's Algorithm</a>
+				<a href="../MazeGeneration/primAlgorithm.html">Prim's Algorithm</a>
+                <a href="../MazeGeneration/huntAndKillAlgorithm.html">Hunt and Kill Algorithm</a>
+            </div>
+        </li>
+        <li><a href="#About us">About us</a></li>
+    </ul>
+    <button class="button" onclick="resetPathfinding()">Reset</button>
+    <button class="button" onclick="pausePathfinding()">Pause</button>
+    <button class="button" onclick="playPathfinding()">Play</button>
+    <button class="button" onclick="stepPathfinding()">Step</button>
+    <div id="dijkstra"></div>
+</body>
+
+</html>
